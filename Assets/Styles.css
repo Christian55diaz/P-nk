@@ -1,0 +1,373 @@
+* applied to entire doc */
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+:root {
+    --primary-color: rgb(255, 104, 104);
+    --secondary-color: #0a0607c4;
+    --tertiary-color: #fffbfb;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--secondary-color);
+}
+
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: var(--tertiary-color);
+    margin: 0px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    margin: 0 10px;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 1px;
+}
+
+header nav ul li a:hover {
+    background: var(--secondary-color);
+    color: var(--tertiary-color);
+    padding: 10px;
+    border-radius: 30px;
+    text-shadow: none;
+}
+
+.hero {
+    background-color: var(--secondary-color);
+    background-size: cover;
+    background-position: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.hero-headline {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+}
+
+.information-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--tertiary-color);
+}
+
+.flex-row {
+    width: 100%;
+}
+
+.section-title {
+    font-size: 45px;
+    padding: 20px 40px;
+    width: 20%;
+    text-align: right;
+}
+
+.about-section {
+    display: flex;
+}
+.about-section p {
+    line-height: 1.5;
+    border-left: 3px solid;
+    padding: 40px;
+    width: 80%;
+}
+
+.work-section {
+    display: flex;
+}
+
+.work-grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    border-left: 3px solid;
+    padding: 40px;
+    width: 80%;
+}
+
+.work-grid-items {
+    min-width: 300px;
+    min-height: 100px;
+    border: 5px solid;
+    border-color: var(--secondary-color);
+    position: relative;
+  }
+
+  .work-grid-items::after {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(315deg, #00c8ff 0%, #2c2c2c 74%);
+    opacity: .0;  
+}
+  .work-grid-items:hover::after {
+      opacity: .5;
+}
+
+  .box-headers {
+    position: absolute;
+    z-index: 1;
+    width: 70%;
+    height: 40px;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    text-align: left;
+}
+
+  .box-headers p {
+    position: absolute;
+    z-index: 2;
+    font-size: 12px;
+}
+
+
+
+  .box1 {
+    grid-column: 1/3;
+    grid-row: 1/3; 
+    background-image: url(./images/html.jpg);
+    background-size: cover;
+    background-position: left;   
+}
+
+  .box-headers a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+  .box2 {
+    background-image: url(./images/Javascript.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+  .box3 {
+    background-image: url(./images/dev.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.box4 {
+    background-image: url(./images/Fullstack.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.box5 {
+    background-image: url(./images/Comingsoon.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.contact-section {
+    display: flex;
+}
+
+.item-list {
+    width: 80%;
+    padding: 40px;
+    border-left: 3px solid;
+}
+
+.contact-section li {
+    display: inline;
+    padding: 40px;
+}
+
+.items {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.items:hover {
+    background: var(--secondary-color);
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 30px;
+    text-shadow: none;
+}
+
+section {
+    padding: 20px 0 20px 0;
+}
+
+/* MEDIA QUERY FOR Larger DESKTOP SCREENS AND SMALLER */
+
+@media screen and (max-width: 1330px) {
+    .work-grid-items {
+        min-width: 0;
+      }
+
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .information-container {
+        flex-direction: column;
+        padding: 20px 40px;
+    }
+
+    .about-section, .work-section, .contact-section {
+        display: block;
+    }
+
+    .section-title {
+        width: 0;
+        padding: 0;
+        padding-bottom: 20px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .about-section p {
+        width: auto;
+    }
+
+    .work-grid-container {
+        display: block;
+        width: auto;
+    }
+
+    .work-grid-items {
+        min-width: 300px;
+        min-height: 150px;
+      }
+
+    .contact-section li {
+        display: block;
+        padding: 10px;
+    }
+    
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .section-title {
+        text-align: left;
+        font-size: 40px;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: 30px;
+        color: var(--tertiary-color);
+        margin: 0px;
+        padding: 5px 10px;
+        background-color: var(--secondary-color);
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+} 
+
+@media screen and (max-width: 575px) {
+
+    header nav ul li a {
+        margin-top: 0;
+        font-size: 18px;
+        flex-wrap: none;
+    }
+
+    .hero {
+        height: 50px;
+    }
+
+    .information-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .about-section p {
+        font-size: 16px;
+    }
+
+    .work-grid-items {
+        min-width: 100%;
+    }
+
+    .box-headers {
+       height: auto;
+    }
+
+    .items {
+        text-decoration: none;
+        font-size: 17px;
+        color: var(--secondary-color);
+    }
+}
