@@ -5,8 +5,6 @@ My Three Main Goals:
 2. I want there to be my top five codes to be on my portfolio that present my strenghts and that show what is me on code.
 3. I want this Portfolio and repository to help and encourage young developers like myself to strive for what they want and to never hesitate on action.
 
-[url=https://postimg.cc/n9YnLPSN][img]https://i.postimg.cc/n9YnLPSN/Screenshot-1.png[/img][/url]
-
-[url=https://postimg.cc/bdQyLZYL][img]https://i.postimg.cc/bdQyLZYL/Screenshot-2.png[/img][/url]
+https://postimg.cc/gallery/669NT69
 
 This is a screenshot of my portfolio, it does not look the best as of now with the four place holders. Those place holders will be changed throughout my journey as a full stack developer. This repository will be the orgin of my developer journey, so that I will be able to look back upon how much I have improved and how much I have changed. 
